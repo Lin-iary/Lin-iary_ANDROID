@@ -45,6 +45,9 @@ class ContentActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
         tl_main_category.getTabAt(3)!!.customView =
             navCategoryMainLayout.navigation_category_page
 
-     }
+
+
+    }
+
 }
 
