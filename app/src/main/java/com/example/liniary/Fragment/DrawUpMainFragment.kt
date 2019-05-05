@@ -18,12 +18,10 @@ import java.util.*
 
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import com.example.liniary.Activity.MainActivity
 import com.example.liniary.R
 
 import kotlinx.android.synthetic.main.fragment_drawup.*
 import java.text.SimpleDateFormat
-import java.util.jar.Manifest
 
 
 class DrawUpMainFragment : Fragment(){
