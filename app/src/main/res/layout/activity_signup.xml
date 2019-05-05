@@ -13,9 +13,7 @@
                   android:orientation="horizontal"
                   android:layout_marginBottom="13.5dp"
                   android:layout_marginTop="139dp"
-                  android:layout_marginLeft="53dp"
-
-    >
+                  android:layout_marginLeft="53dp">
         <TextView android:layout_width="wrap_content"
                   android:layout_height="29dp"
                   android:layout_marginRight="25dp"
@@ -27,6 +25,26 @@
                   android:layout_height="33dp"
                   android:background="@drawable/primary_border"
                   />
+    </LinearLayout>
+
+        <TextView          android:text="상담자 정보를 입력해주세요"
+                  android:layout_gravity="center"
+        />
+        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+        <TextView
+                android:text="나이"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:id="@+id/txtSignupAge"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_age"
+            android:padding="20dp"
+        />
     </LinearLayout>
     <LinearLayout android:layout_width="318dp"
                   android:layout_height="689dp"
@@ -68,6 +86,7 @@
                       android:layout_gravity="center"
                       android:layout_marginRight="42dp"
 
+
                       android:textStyle="bold"
                       android:textColor="@color/colorDarkRed"/>
             <LinearLayout android:layout_width="186.1dp"
@@ -104,6 +123,82 @@
                           android:layout_marginBottom="9dp"
                           android:layout_marginTop="10dp"
                           android:id="@+id/txtMainSignup"/>
+=======
+            <TextView
+                    android:text="가족력"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/txtSignupFamily"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+
+                    <Spinner
+                            android:padding="20sp"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_relation"
+                    />
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="나이"
+                            android:ems="10"
+                            android:id="@+id/edtSignupFamAge"
+                    />
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+
+                    <Spinner
+                            android:padding="20sp"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_relation2"
+                    />
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="나이"
+                            android:ems="10"
+                            android:id="@+id/edtSignupFamAge2"
+                    />
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                                android:visibility="gone">
+
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="관계"
+                            android:ems="10"
+                            android:id="@+id/edtSignupFamRel3"
+                    />
+                    <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="나이"
+                            android:ems="10"
+                            android:id="@+id/edtSignupFamAge3"
+                    />
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_launcher_foreground"
+                            android:id="@+id/btnSignupFamadd2"
+                    />
+                </LinearLayout>
+>>>>>>> b976cf5209c53dcfda87e1e7d16f21d5bb4fec3e
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:layout_width="wrap_content"
