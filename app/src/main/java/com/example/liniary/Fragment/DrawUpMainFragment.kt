@@ -25,7 +25,7 @@ import java.text.SimpleDateFormat
 import java.util.jar.Manifest
 
 
-class DrawUpFragment : Fragment(){
+class DrawUpMainFragment : Fragment(){
     val REQUEST_CODE_SELECT_IMAGE: Int = 1004 //startActivityForResult에서 쓰임 다른 액티비티 띄운다음에 결과를 보내줌.
     val My_READ_STORAGE_REQUEST_CODE :Int = 7777
 
