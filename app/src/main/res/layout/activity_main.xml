@@ -35,8 +35,6 @@
                     android:text="I D"
                     android:textSize="15sp"
                     android:textColor="@color/colorDarkRed"
-
-                    android:letterSpacing="0.3sp"
                     android:layout_marginRight="14dp"
                     android:layout_width="19dp"
                     android:layout_height="22dp"
