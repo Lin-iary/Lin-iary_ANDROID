@@ -16,30 +16,32 @@
             android:paddingBottom="40dp"
             android:layout_gravity="center">
         <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:layout_marginBottom="100dp"
-                tools:srcCompat="@tools:sample/avatars"
+
+                android:layout_marginBottom="48dp"
+                tools:srcCompat="@drawable/ma_lo"
 
                 android:id="@+id/imgMainLogo"/>
         <LinearLayout android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:orientation="horizontal"
                       android:layout_marginBottom="14dp"
-                      
+
                       android:gravity="center">
 
             <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="I D"
                     android:textSize="15sp"
-                    android:textColor="@color/colorDarkRed"
                     android:layout_marginRight="14dp"
-                    android:layout_width="19dp"
-                    android:layout_height="22dp"
-                    android:id="@+id/txtMainID"
-                    android:layout_weight="1"/>
+                    android:textColor="@color/colorDarkRed"
+
+
+                    android:letterSpacing="0.3"/>
+
             <EditText
                     android:layout_width="147dp"
                     android:layout_height="29dp"
@@ -73,36 +75,36 @@
                     android:background="@drawable/primary_border"
                     android:id="@+id/edtMainPW"/>
         </LinearLayout>
-       <LinearLayout android:layout_width="239.2dp"
-                     android:layout_height="41dp"
-                    android:background="@drawable/primary_border_fill"
+        <LinearLayout android:layout_width="239.2dp"
+                      android:layout_height="41dp"
+                      android:background="@drawable/primary_border_fill"
 
-                     >
-           <TextView android:layout_width="41dp"
-                     android:layout_height="22dp"
-                     android:layout_marginLeft="38.2dp"
-                     android:layout_marginRight="36.5dp"
-                     android:layout_marginBottom="9dp"
-                     android:layout_marginTop="10dp"
-                     android:textColor="#FFFFFF"
-                     android:text="로그인"
-                     android:textSize="15sp"
+        >
+            <TextView android:layout_width="41dp"
+                      android:layout_height="22dp"
+                      android:layout_marginLeft="38.2dp"
+                      android:layout_marginRight="36.5dp"
+                      android:layout_marginBottom="9dp"
+                      android:layout_marginTop="10dp"
+                      android:textColor="#FFFFFF"
+                      android:text="로그인"
+                      android:textSize="15sp"
 
 
-                     android:id="@+id/txtMainLogin"/>
-           <ImageView android:layout_width="1dp" android:layout_height="25dp"
-                      android:background="#ffffff"
-                      android:layout_marginBottom="6.5dp"
-                      android:layout_marginTop="7.5dp" android:id="@+id/imgMainBar"/>
-           <TextView android:layout_width="55dp"
-                     android:layout_height="22dp"
-                     android:textColor="#FFFFFF"
-                     android:textSize="15sp"
-                     android:text="회원가입"
-                     android:layout_marginLeft="36.5dp"
-                     android:layout_marginBottom="9dp"
-                     android:layout_marginTop="10dp"
-                     android:id="@+id/txtMainSignup"/>
-       </LinearLayout>
+                      android:id="@+id/txtMainLogin"/>
+            <ImageView android:layout_width="1dp" android:layout_height="25dp"
+                       android:background="#ffffff"
+                       android:layout_marginBottom="6.5dp"
+                       android:layout_marginTop="7.5dp" android:id="@+id/imgMainBar"/>
+            <TextView android:layout_width="55dp"
+                      android:layout_height="22dp"
+                      android:textColor="#FFFFFF"
+                      android:textSize="15sp"
+                      android:text="회원가입"
+                      android:layout_marginLeft="36.5dp"
+                      android:layout_marginBottom="9dp"
+                      android:layout_marginTop="10dp"
+                      android:id="@+id/txtMainSignup"/>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
