@@ -1,7 +1,6 @@
 package com.example.liniary.Network
 
-import android.support.annotation.NonNull
-import com.example.liniary.Model.PostDiaryDrawUpResponse
+import com.example.liniary.Model.post.PostDiaryDrawUpResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -10,9 +9,9 @@ import retrofit2.http.*
 interface NetworkService {
 
     @Multipart
-    @POST("/api/upload")
-    fun postJoin(
-        @Part("content") content: String,
+    @POST("/api/diary")
+    fun postDiaryDrawUpResponse(
+        @Part("content") content: RequestBody,
         @Part photo: MultipartBody.Part?
     ): Call<PostDiaryDrawUpResponse>
 }
