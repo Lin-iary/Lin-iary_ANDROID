@@ -36,8 +36,10 @@ class DrawUpMainFragment : Fragment(){
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View = inflater.inflate(R.layout.fragment_drawup, container, false)
-
         return view
+
+
+
     }
 
     fun setDate()
@@ -58,8 +60,14 @@ class DrawUpMainFragment : Fragment(){
         }
         val btnSave : TextView = view!!.findViewById(R.id.btn_frag_drawup_save) as TextView
         btnSave.setOnClickListener {
-            //서버에 보내기
+
+            postDiaryDrawUpResponse()
         }
+
+    }
+
+    private fun postDiaryDrawUpResponse(){
+      //  val input_content = view!!.findViewById(R.id.et_drawup_frag_comment)
     }
 
     private fun requestReadExternalStoragePermission(){
@@ -94,6 +102,9 @@ class DrawUpMainFragment : Fragment(){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        et_drawup_frag_comment.setOnClickListener {
+
+        }
         setDate()
         setOnbtnClickListener()
     }

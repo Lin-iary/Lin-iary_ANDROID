@@ -9,17 +9,18 @@
         android:orientation="vertical"
 >
 
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+    />
     <android.support.design.widget.TabLayout
-            android:layout_below="@+id/viewpager_main"
             android:id="@+id/tl_main_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabIndicatorColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimaryIvory"
     >
     </android.support.design.widget.TabLayout>
-    <android.support.v4.view.ViewPager
-            android:id="@+id/viewpager_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-    />
 </LinearLayout>
