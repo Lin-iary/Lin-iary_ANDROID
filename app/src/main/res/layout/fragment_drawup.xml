@@ -139,7 +139,7 @@
                         android:textStyle="bold"
                 />
                 <ImageView
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="9dp"
                         android:layout_below="@+id/txt_mom"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -148,16 +148,16 @@
                 <EditText
                         android:layout_marginHorizontal="12dp"
                         android:layout_below="@+id/txt_mom"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:textColor="#ea8c7d"
                         android:textColorHint="#ea8c7d"
                         android:background="@null"
                         android:id="@+id/et_drawup_frag_comment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="14dp"
+                        android:lineSpacingExtra="3dp"
                         android:cursorVisible="false"
-                        android:hint="자세하게 적어주시면 상담에 도움이 됩니다 :)"/>
+                        android:hint="적어주시면 상담에 도움이 됩니다 :)"/>
             </RelativeLayout>
             <TextView
                     android:layout_width="280dp"
