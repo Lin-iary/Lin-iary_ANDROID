@@ -22,7 +22,6 @@ class ContentActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
     override fun onTabSelected(p0: TabLayout.Tab?) {
         viewpager_main.currentItem = p0!!.position
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_content)

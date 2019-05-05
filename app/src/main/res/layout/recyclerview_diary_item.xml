@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
+        android:id="@+id/recycler_item"
+        android:layout_margin="10dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal">
 
     <ImageView
-            android:layout_width="151dp"
-            android:layout_height="165dp" app:srcCompat="@mipmap/ic_launcher"
+            android:layout_width="153dp"
+            android:layout_height="200dp" app:srcCompat="@mipmap/ic_launcher"
+            android:scaleType="fitCenter"
             android:id="@+id/diary_imageview"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" android:layout_marginTop="160dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+    />
     <TextView
             android:text="TextView"
             android:layout_width="133dp"
-            android:layout_height="27dp" android:gravity="center"
-            android:id="@+id/diary_textView" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="316dp" app:layout_constraintHorizontal_bias="0.465"/>
-</android.support.constraint.ConstraintLayout>
+            android:layout_height="17dp"
+            android:gravity="center"
+            android:id="@+id/diary_textView"/>
+</LinearLayout>
