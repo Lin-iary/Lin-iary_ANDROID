@@ -5,22 +5,22 @@
               android:background="@drawable/default_background"
               android:orientation="vertical">
 
-            <RelativeLayout
-                    android:background="@drawable/toolbar_drawup_diary"
-                    android:layout_width="match_parent"
-                    android:layout_height="47dp">
-                <TextView
-                        android:id="@+id/tv_drawup_frag_today"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_centerHorizontal="true"
-                        android:textColor="#fff"
-                        android:text="날짜"
-                        android:layout_marginTop="15.7dp"
-                        android:textSize="18sp"
-                />
-            </RelativeLayout>
+    <RelativeLayout
+            android:background="@drawable/toolbar_drawup_diary"
+            android:layout_width="match_parent"
+            android:layout_height="47dp">
+        <TextView
+                android:id="@+id/tv_drawup_frag_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:text="날짜"
+                android:layout_marginTop="15.7dp"
+                android:textSize="18sp"
+        />
+    </RelativeLayout>
     <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">\
         <LinearLayout
                 android:orientation="vertical"
@@ -89,32 +89,32 @@
                 <TextView
                         android:id="@+id/txt_mom"
                         android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:text="엄마 아빠 한마디"
-                          android:textSize="20sp"
-                          android:textColor="#655959"
-                          android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="엄마 아빠 한마디"
+                        android:textSize="20sp"
+                        android:textColor="#655959"
+                        android:textStyle="bold"
                 />
                 <ImageView
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="9dp"
                         android:layout_below="@+id/txt_mom"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                android:src="@drawable/line_gr"
+                        android:src="@drawable/line_gr"
                 />
                 <EditText
                         android:layout_marginHorizontal="12dp"
                         android:layout_below="@+id/txt_mom"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:textColor="#ea8c7d"
                         android:textColorHint="#ea8c7d"
                         android:background="@null"
                         android:id="@+id/et_drawup_frag_comment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="14dp"
+                        android:lineSpacingExtra="3dp"
                         android:cursorVisible="false"
-                        android:hint="자세하게 적어주시면 상담에 도움이 됩니다 :)"/>
+                        android:hint="적어주시면 상담에 도움이 됩니다 :)"/>
             </RelativeLayout>
             <TextView
                     android:layout_width="wrap_content"
