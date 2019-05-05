@@ -22,14 +22,26 @@
                 tools:srcCompat="@tools:sample/avatars"
 
                 android:id="@+id/imgMainLogo"/>
-        <EditText
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:layout_gravity="center"
-                android:text="ID"
-                android:ems="10"
-                android:id="@+id/edtMainID"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+
+            <TextView
+                    android:text="ID"
+                    android:textSize="15sp"
+                    android:textColor=""
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:layout_gravity="center"
+                    android:text="ID"
+                    android:ems="10"
+                    android:id="@+id/edtMainID"/>
+        </LinearLayout>
         <EditText
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
