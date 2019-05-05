@@ -2,21 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_gravity="bottom"
-              android:gravity="bottom"
               android:background="@color/colorPrimaryIvory"
+              android:backgroundTint="@color/colorPrimaryIvory"
               android:dividerPadding="1dp">
     <LinearLayout
             android:id="@+id/navigation_category_diary"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
         <ImageView
                 android:src="@mipmap/ic_launcher_round"
-                android:layout_width="50dp" android:layout_height="50dp"
-                android:layout_above="@id/text_diary"/>
+                android:layout_width="50dp" android:layout_height="50dp"/>
         <TextView
                 android:id="@+id/text_diary"
                 android:text="일기장"
@@ -27,7 +25,7 @@
     <LinearLayout
             android:id="@+id/navigation_category_drawup"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
@@ -43,7 +41,7 @@
     <LinearLayout
             android:id="@+id/navigation_category_consulting"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
@@ -59,7 +57,7 @@
     <LinearLayout
             android:id="@+id/navigation_category_page"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
