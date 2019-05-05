@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.liniary.R
 import kotlinx.android.synthetic.main.fragment_dialog.*
 
-class DialogFragment : DialogFragment(){
+class CommentDialogFragment : DialogFragment(){
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_dialog,container,false)
         return view

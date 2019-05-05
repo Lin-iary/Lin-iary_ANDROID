@@ -1,6 +1,7 @@
 package com.example.liniary.Fragment
 
 import android.os.Bundle
+import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
 import android.util.Log
@@ -20,6 +21,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class DiaryFragment  : Fragment() {
+    var dataList: ArrayList<GetDiaryListResponseData> = ArrayList()
 
     val networkService: NetworkService by lazy {
         ApplicationController.instance.networkService
@@ -33,6 +35,17 @@ class DiaryFragment  : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_diary, container, false)
     }
+
+    /*
+    override fun onClick(v: View?) {
+        if (recyclerview_diary.indexOfChild(v) != -1) { // 리사이클러뷰의 자식뷰 이면  !
+            val idx: Int = recyclerview_diary.getChildAdapterPosition(v!!) // 선택된 자식뷰
+            var markerTitle: String = getCurrentAddress(markerlist[idx].position)
+            val dialog: CommentDialogFragment = CommentDialogFragment(this, dataList[idx], currentLatLng)
+            dialog.show()(idx, markerTitle)
+        }
+    }
+    */
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
