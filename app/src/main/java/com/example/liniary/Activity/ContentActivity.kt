@@ -1,6 +1,7 @@
 package com.example.liniary.Activity
 
 import android.os.Bundle
+import android.support.design.widget.TabLayout
 import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
@@ -9,12 +10,22 @@ import com.example.liniary.R
 import kotlinx.android.synthetic.main.activity_content.*
 import kotlinx.android.synthetic.main.navigation_main.view.*
 
-class ContentActivity : AppCompatActivity() {
+class ContentActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
+    override fun onTabReselected(p0: TabLayout.Tab?) {
+
+    }
+
+    override fun onTabUnselected(p0: TabLayout.Tab?) {
+
+    }
+
+    override fun onTabSelected(p0: TabLayout.Tab?) {
+        viewpager_main.currentItem = p0!!.position
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_content)
-
         configureMainTab()
     }
     private fun configureMainTab() {
@@ -34,6 +45,6 @@ class ContentActivity : AppCompatActivity() {
         tl_main_category.getTabAt(3)!!.customView =
             navCategoryMainLayout.navigation_category_page
 
-    }
+     }
 }
 
