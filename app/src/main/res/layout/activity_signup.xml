@@ -5,15 +5,17 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        tools:context=".Activity.SignupActivity">
+
+        tools:context=".Activity.SignupActivity"
+        android:background="@drawable/default_background">
     <LinearLayout android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:orientation="horizontal"
                   android:layout_marginBottom="13.5dp"
                   android:layout_marginTop="139dp"
+                  android:layout_marginLeft="53dp"
 
-                  >
+    >
         <TextView android:layout_width="wrap_content"
                   android:layout_height="29dp"
                   android:layout_marginRight="25dp"
@@ -23,24 +25,161 @@
                   android:textSize="20sp"/>
         <EditText android:layout_width="190.1dp"
                   android:layout_height="33dp"
-                  android:background="@drawable/primary_border" android:layout_alignTop="@+id/null"/>
+                  android:background="@drawable/primary_border"
+                  />
     </LinearLayout>
     <LinearLayout android:layout_width="318dp"
                   android:layout_height="689dp"
-                  android:layout_marginTop="184dp"
 
-                  android:orientation="vertical">
-        <TextView android:layout_width="37dp"
-                  android:layout_height="29dp"
-        android:text="나이"
-        android:textColor="@color/colorDarkRed"
-        android:textStyle="bold"
-        android:layout_marginTop="44dp"
-        android:layout_marginLeft="28dp"/>
-        <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/spinner"/>
+
+                  android:background="@drawable/signup_border"
+                  android:layout_marginTop="206dp"
+
+
+                  android:orientation="vertical" android:layout_centerHorizontal="true"
+                  android:layout_alignParentBottom="true" android:layout_marginBottom="-139dp">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="20.3dp"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="37dp"
+                      android:layout_height="29dp"
+                      android:text="나이"
+                      android:textColor="@color/colorDarkRed"
+                      android:textStyle="bold"
+                      android:layout_marginTop="44dp"
+                      android:layout_marginLeft="28dp"/>
+            //스피닝?넣어야함
+            <Spinner android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                    android:id="@+id/sp_age"
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="28dp"
+
+                      android:layout_marginTop="10.3dp"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="29dp"
+                      android:text="성별"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="42dp"
+
+                      android:textStyle="bold"
+                      android:textColor="@color/colorDarkRed"/>
+            <LinearLayout android:layout_width="186.1dp"
+                          android:layout_height="40.6dp"
+
+
+                          android:background="@drawable/primary_border_fill"
+
+            >
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="24dp"
+                          android:layout_marginLeft="37dp"
+                          android:layout_marginRight="27dp"
+                          android:layout_marginBottom="9.6dp"
+                          android:layout_marginTop="7dp"
+                          android:textColor="#FFFFFF"
+                          android:text="남자"
+
+                          android:textSize="16sp"
+
+
+                          android:id="@+id/txtSignupM"/>
+                <ImageView android:layout_width="1dp" android:layout_height="27dp"
+                           android:background="#ffffff"
+                           android:layout_marginBottom="6.5dp"
+                           android:layout_marginTop="7.5dp" android:id="@+id/imgSignupBar"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="24dp"
+                          android:textColor="#FFFFFF"
+                          android:textSize="16sp"
+                          android:text="여자"
+
+                          android:layout_marginLeft="36.5dp"
+                          android:layout_marginBottom="9dp"
+                          android:layout_marginTop="10dp"
+                          android:id="@+id/txtMainSignup"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginTop="22.4dp"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="29dp"
+                      android:text="가족력"
+                      android:textColor="@color/colorDarkRed"
+                      android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="33.3dp"
+                      android:layout_marginLeft="28dp"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="29dp"
+                      android:text="성격"
+                      android:layout_marginRight="38dp"
+
+
+                      android:textColor="@color/colorDarkRed"
+
+                      android:textStyle="bold"/>
+            <EditText
+                    android:layout_width="190.1dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="30.1dp"
+                    android:hint="자세히 적어주시면 상담에 도움이 됩니다:)"
+                    android:textColor="#ea8c7d"
+                    android:background="@drawable/default_background"/>
+
+        </LinearLayout>
+        <Button android:layout_width="279dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/pink_border"
+                android:textColor="#FFFFFF"
+                android:text="시작하기"
+                android:paddingBottom="10dp"
+                android:paddingTop="6dp"
+
+        />
+
 
     </LinearLayout>
-   
-        </RelativeLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:paddingHorizontal="20dp"
+                  android:layout_height="41.5dp"
+                  android:orientation="horizontal"
+                  android:background="@drawable/signup_img_border"
+                  android:gravity="center" android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="73dp"
+                  android:layout_marginTop="185.5dp"
+                  android:layout_alignParentTop="true">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hi_icon" android:id="@+id/imaSignup"
+                android:layout_weight="1"
+                android:layout_marginRight="11dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="19dp"
+                  android:text="상담자 정보를 적어주세요"
+                  android:textColor="@color/colorDarkRed"
+                  android:textSize="13sp"
+                  />
+    </LinearLayout>
+
+
+</RelativeLayout>
