@@ -11,21 +11,17 @@ import android.provider.MediaStore
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
-import android.telecom.Call
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import java.util.*
-
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.liniary.Model.post.PostDiaryDrawUpResponse
 import com.example.liniary.Network.ApplicationController
 import com.example.liniary.Network.NetworkService
 import com.example.liniary.R
-
 import kotlinx.android.synthetic.main.fragment_drawup.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -35,6 +31,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 import java.text.SimpleDateFormat
+import java.util.*
 
 
 class DrawUpMainFragment : Fragment() {
