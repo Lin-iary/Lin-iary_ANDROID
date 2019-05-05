@@ -22,14 +22,13 @@ class ContentActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
     override fun onTabSelected(p0: TabLayout.Tab?) {
         viewpager_main.currentItem = p0!!.position
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_content)
         configureMainTab()
     }
     private fun configureMainTab() {
-        viewpager_main.adapter = MainPagerAdapter(supportFragmentManager, 4)
+        viewpager_main.adapter = MainPagerAdapter(supportFragmentManager, 3)
         viewpager_main.offscreenPageLimit = 2
         tl_main_category.setupWithViewPager(viewpager_main)
 
@@ -41,8 +40,6 @@ class ContentActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
         tl_main_category.getTabAt(1)!!.customView =
             navCategoryMainLayout.navigation_category_drawup
         tl_main_category.getTabAt(2)!!.customView =
-            navCategoryMainLayout.navigation_category_consulting
-        tl_main_category.getTabAt(3)!!.customView =
             navCategoryMainLayout.navigation_category_page
 
 

@@ -8,20 +8,18 @@
         tools:context=".Activity.ContentActivity"
         android:orientation="vertical"
 >
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tl_main_category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabIndicatorColor="@color/colorPrimaryDark"
 
->
-</android.support.design.widget.TabLayout>
+    <android.support.design.widget.TabLayout
+            android:layout_below="@+id/viewpager_main"
+            android:id="@+id/tl_main_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorPrimaryDark"
+    >
+    </android.support.design.widget.TabLayout>
     <android.support.v4.view.ViewPager
             android:id="@+id/viewpager_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
     />
-
-
-
 </LinearLayout>
