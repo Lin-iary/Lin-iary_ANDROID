@@ -99,7 +99,6 @@ class DrawUpMainFragment : Fragment() {
                     if (response.isSuccessful) {
                         if(response.body()!!.status == 200) {
                             toast(response.body()!!.message)
-                            activity!!.finish()
                         }
                         else{
                             toast(response.body()!!.message)

@@ -24,10 +24,9 @@ class DiaryDetailActivity : AppCompatActivity() {
             .load(img_url)
             .thumbnail(0.1f)
             .into(img_diary_frag_diary)
-        txt_diary_frag_counselor_name.text = intent.getStringExtra("diary_name")
-        txt_diary_frag_conselor_organization.text = intent.getStringExtra("diary_orga")
         txt_diary_frag_comment.text = intent.getStringExtra("diary_content")
-        if(txt_diary_frag_conselor_organization.text == "" ||txt_diary_frag_conselor_organization.text == null)
+        val status = intent.getIntExtra("status",1)
+        if(status == 0)
         {
             img_arrow.visibility = View.GONE
             rl_counselor_comment.visibility = View.GONE

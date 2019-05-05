@@ -35,10 +35,11 @@ class DiaryRecyclerViewAdapter (var context: Context, var dataList:ArrayList<Get
             context.startActivity<DiaryDetailActivity>(
                 "diary_date" to dataList[p1].write_date,
                 "diary_image" to dataList[p1].url,
-                "diary_content" to dataList[p1].content,
+                "diary_content" to dataList[p1].consult_content,
                 "diary_name" to dataList[p1].conselor_name,
                 "diary_orga" to dataList[p1].conselor_organization,
-                "diary_consel_content" to dataList[p1].conselor_content
+                "diary_consel_content" to dataList[p1].consult_content,
+            "status" to dataList[p1].state
             )
         }
     }

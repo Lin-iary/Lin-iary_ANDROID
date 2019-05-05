@@ -85,6 +85,7 @@
                         android:textStyle="bold"
                 />
                 <ImageView
+                        android:visibility="invisible"
                         android:layout_marginTop="8dp"
                         android:layout_below="@+id/txt_mom"
                         android:layout_width="match_parent"
@@ -99,7 +100,7 @@
                         android:id="@+id/txt_diary_frag_comment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:lineSpacingExtra="14dp"/>
+                        android:lineSpacingExtra="11dp"/>
             </RelativeLayout>
             <ImageView
                     android:src="@drawable/ma_sc"

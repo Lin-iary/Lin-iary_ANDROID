@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content"
+              android:layout_height="30dp"
               android:dividerPadding="1dp">
     <LinearLayout
             android:id="@+id/navigation_category_diary"
@@ -12,7 +12,7 @@
             android:orientation="vertical">
         <ImageView
                 android:src="@drawable/ic_book"
-                android:layout_width="50dp" android:layout_height="50dp"/>
+                android:layout_width="30dp" android:layout_height="30dp"/>
     </LinearLayout>
     <LinearLayout
             android:id="@+id/navigation_category_drawup"
@@ -23,7 +23,7 @@
             android:orientation="vertical">
         <ImageView
                 android:src="@drawable/ic_pen"
-                android:layout_width="50dp" android:layout_height="50dp"/>
+                android:layout_width="30dp" android:layout_height="30dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -35,6 +35,6 @@
             android:orientation="vertical">
         <ImageView
                 android:src="@drawable/ic_page"
-                android:layout_width="50dp" android:layout_height="50dp"/>
+                android:layout_width="30dp" android:layout_height="30dp"/>
     </LinearLayout>
 </LinearLayout>

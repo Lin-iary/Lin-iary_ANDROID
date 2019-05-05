@@ -14,7 +14,7 @@ data class GetDiaryListResponseData(
     val write_date: String,
     val consult_idx: String,
     val state: Int,
-    val conselor_content: String,
+    val consult_content: String,
     val conselor_name: String,
     val conselor_organization: String
 )

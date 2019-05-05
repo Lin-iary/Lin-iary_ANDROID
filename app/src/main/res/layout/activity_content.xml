@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/default_background"
         tools:context=".Activity.ContentActivity"
         android:orientation="vertical"
 >
@@ -18,11 +19,10 @@
     <android.support.design.widget.TabLayout
             android:id="@+id/tl_main_category"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            app:tabIndicatorColor="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="@color/colorDarkRed"
             android:background="#f6ead9"
-            app:tabIndicatorHeight="0dp"
+            app:tabIndicatorHeight="1dp"
     >
     </android.support.design.widget.TabLayout>
 </LinearLayout>
