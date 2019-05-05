@@ -56,6 +56,10 @@ class DrawUpMainFragment : Fragment(){
         btnUploadPhoto.setOnClickListener {
             requestReadExternalStoragePermission()
         }
+        val btnSave : TextView = view!!.findViewById(R.id.btn_frag_drawup_save) as TextView
+        btnSave.setOnClickListener {
+            //서버에 보내기
+        }
     }
 
     private fun requestReadExternalStoragePermission(){
@@ -110,6 +114,7 @@ class DrawUpMainFragment : Fragment(){
                         .load(selectImageUri)
                         .thumbnail(0.1f)
                         .into(img_drawup_frag_diary)
+
                 }
             }
         }

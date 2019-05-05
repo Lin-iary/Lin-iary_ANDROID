@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:background="@drawable/default_background"
               android:orientation="vertical">
     <TextView
             android:id="@+id/tv_drawup_frag_today"
@@ -45,6 +46,7 @@
             android:layout_marginTop="16dp"
             android:id="@+id/img_drawup_frag_diary"
             android:layout_width="match_parent"
+            android:scaleType="fitCenter"
             android:layout_height="300dp"/>
     <RelativeLayout
             android:layout_width="match_parent"
@@ -63,13 +65,19 @@
                 android:textSize="21sp"
                 android:text="그릴래요"/>
     </RelativeLayout>
-<TextView android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-android:text="엄마아빠 한마디"
-/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="엄마아빠 한마디"
+    />
     <EditText
             android:id="@+id/et_drawup_frag_comment"
             android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-    android:hint="자세하게 적어주시면 상담에 큰 도움이 됩니다."/>
+            android:layout_height="wrap_content"
+            android:hint="자세하게 적어주시면 상담에 큰 도움이 됩니다."/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장하기"
+            android:layout_gravity="center"
+            android:id="@+id/btn_frag_drawup_save"/>
 </LinearLayout>
