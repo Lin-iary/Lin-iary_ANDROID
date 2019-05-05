@@ -35,5 +35,6 @@ class ContentActivity : AppCompatActivity() {
             navCategoryMainLayout.navigation_category_page
 
     }
+     
 }
 
