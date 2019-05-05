@@ -11,3 +11,4 @@ class ContentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_content)
     }
 }
+
