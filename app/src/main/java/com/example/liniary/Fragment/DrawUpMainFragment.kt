@@ -11,6 +11,7 @@ import android.provider.MediaStore
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
+import android.telecom.Call
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -30,7 +31,6 @@ import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import org.jetbrains.anko.support.v4.toast
-import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
@@ -89,12 +89,12 @@ class DrawUpMainFragment : Fragment() {
                 networkService.postDiaryDrawUpResponse(content, data)
 
             postDiaryDrawUpResponse.enqueue(object : Callback<PostDiaryDrawUpResponse> {
-                override fun onFailure(call: Call<PostDiaryDrawUpResponse>, t: Throwable) {
+                override fun onFailure(call: retrofit2.Call<PostDiaryDrawUpResponse>, t: Throwable) {
                     Log.e("write fail", t.toString())
                 }
 
                 override fun onResponse(
-                    call: Call<PostDiaryDrawUpResponse>, response: Response<PostDiaryDrawUpResponse>
+                    call: retrofit2.Call<PostDiaryDrawUpResponse>, response: Response<PostDiaryDrawUpResponse>
                 ) {
                     if (response.isSuccessful) {
                         if(response.body()!!.status == 200) {
