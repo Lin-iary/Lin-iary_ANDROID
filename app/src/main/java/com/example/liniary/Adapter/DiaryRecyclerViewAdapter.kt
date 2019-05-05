@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import com.example.liniary.Activity.DiaryDetailActivity
 import com.example.liniary.Model.DiaryData
 import com.example.liniary.R
 import kotlinx.android.synthetic.main.recyclerview_diary_item.view.*
@@ -29,7 +30,7 @@ class DiaryRecyclerViewAdapter (var context: Context, var dataList:ArrayList<Dia
             .into(p0.image)
 
         p0.container.onClick {
-            context.startActivity<ProductActivity>(
+            context.startActivity<DiaryDetailActivity>(
                 "diary_data" to dataList[p1].diary_date,
                 "diary_image" to dataList[p1].diary_image
             )
