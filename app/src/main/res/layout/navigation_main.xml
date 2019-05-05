@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="150dp"
-              android:dividerPadding="1dp">
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+              android:gravity="bottom"
+              android:background="@color/colorPrimaryIvory">
     <LinearLayout
             android:id="@+id/navigation_category_diary"
             android:layout_width="wrap_content"
