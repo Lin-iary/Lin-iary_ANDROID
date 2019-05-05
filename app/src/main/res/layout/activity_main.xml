@@ -10,6 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:gravity="center"
 
             android:paddingBottom="40dp"
             android:layout_gravity="center">
@@ -22,53 +23,86 @@
                 tools:srcCompat="@tools:sample/avatars"
 
                 android:id="@+id/imgMainLogo"/>
-        <LinearLayout android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:orientation="horizontal">
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="14dp"
+                      
+                      android:gravity="center">
 
             <TextView
                     android:text="ID"
                     android:textSize="15sp"
-                    android:textColor=""
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
+                    android:textColor="@color/colorDarkRed"
+                    android:letterSpacing="22sp"
+                    android:layout_marginRight="14dp"
+                    android:layout_width="19dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/txtMainID"
+                    android:layout_weight="1"/>
             <EditText
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="147dp"
+                    android:layout_height="29dp"
                     android:inputType="textPersonName"
-                    android:layout_gravity="center"
-                    android:text="ID"
+                    android:background="@drawable/primary_border"
                     android:ems="10"
                     android:id="@+id/edtMainID"/>
         </LinearLayout>
-        <EditText
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:layout_gravity="center"
-                android:text="PW"
-                android:ems="10"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/edtMainPW"/>
-        <Button
-                android:text="로그인"
-                android:layout_gravity="center"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                      android:layout_marginBottom="26dp">
+
+            <TextView
+                    android:text="PW"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorDarkRed"
+                    android:layout_marginRight="14dp"
 
 
-                android:id="@+id/btnMainLogin"
+                    android:layout_width="23dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/txtViewPW"
+                    android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="147dp"
+                    android:layout_height="29dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:background="@drawable/primary_border"
+                    android:id="@+id/edtMainPW"/>
+        </LinearLayout>
+       <LinearLayout android:layout_width="239.2dp"
+                     android:layout_height="41dp"
+                    android:background="@drawable/primary_border_fill"
 
-        />
-        <Button
-                android:text="회원가입"
-                android:layout_gravity="center"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="10dp"
-                android:id="@+id/btnMainSignup"
-        />
+                     >
+           <TextView android:layout_width="41dp"
+                     android:layout_height="22dp"
+                     android:layout_marginLeft="38.2dp"
+                     android:layout_marginRight="36.5dp"
+                     android:layout_marginBottom="9dp"
+                     android:layout_marginTop="10dp"
+           android:textColor="#FFFFFF"
+           android:text="로그인"
+                     android:textSize="15sp"
+
+
+           />
+           <ImageView android:layout_width="1dp" android:layout_height="25dp"
+                      android:background="#ffffff"
+                      android:layout_marginBottom="6.5dp"
+                      android:layout_marginTop="7.5dp"/>
+           <TextView android:layout_width="55dp"
+                     android:layout_height="22dp"
+                     android:textColor="#FFFFFF"
+                     android:textSize="15sp"
+                     android:text="회원가입"
+                     android:layout_marginLeft="36.5dp"
+                     android:layout_marginBottom="9dp"
+                     android:layout_marginTop="10dp"
+                    />
+       </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
