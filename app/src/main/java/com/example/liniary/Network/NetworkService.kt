@@ -12,10 +12,7 @@ interface NetworkService {
     @Multipart
     @POST("/api/upload")
     fun postJoin(
-        @Part("user_id") user_id: RequestBody,
-        @Part("user_password") user_password: RequestBody,
-        @Part("user_name") user_name: RequestBody,
-        @Part("user_phone") user_phone: RequestBody,
-        @Part user_img: MultipartBody.Part?
+        @Part("content") content: String,
+        @Part photo: MultipartBody.Part?
     ): Call<PostDiaryDrawUpResponse>
 }
