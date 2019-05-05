@@ -18,6 +18,7 @@ import java.util.*
 
 import android.widget.TextView
 import com.bumptech.glide.Glide
+import com.example.liniary.Activity.MainActivity
 import com.example.liniary.R
 
 import kotlinx.android.synthetic.main.fragment_drawup.*
@@ -30,11 +31,14 @@ class DrawUpMainFragment : Fragment(){
     val My_READ_STORAGE_REQUEST_CODE :Int = 7777
 
     var imageURI : String? = null
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view : View = inflater.inflate(R.layout.fragment_drawup, container, false)
-        setOnbthClickListener()
-        setDate()
+
         return view
     }
 
@@ -44,17 +48,14 @@ class DrawUpMainFragment : Fragment(){
         val date = Date(now)
         val sdfNow = SimpleDateFormat("yyyy년 MM월 dd일")
         val formatDate = sdfNow.format(date)
-
-        val dateNow: TextView
-
-
-        dateNow =  tv_drawup_frag_today as TextView
+        val dateNow: TextView = view!!.findViewById(R.id.tv_drawup_frag_today)
         dateNow.setText(formatDate)
     }
 
-    fun setOnbthClickListener()
+    fun setOnbtnClickListener()
     {
-        txt_frag_drawup_upload_photo.setOnClickListener {
+        val btnUploadPhoto : TextView =view!!.findViewById(R.id.txt_frag_drawup_upload_photo) as TextView
+        btnUploadPhoto.setOnClickListener {
             requestReadExternalStoragePermission()
         }
     }
@@ -91,7 +92,8 @@ class DrawUpMainFragment : Fragment(){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
+        setDate()
+        setOnbtnClickListener()
     }
 
     //앨범에서 사진을 선택했을때 실행되는 메소드
