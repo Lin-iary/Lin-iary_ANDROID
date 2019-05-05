@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:minWidth="360dp"
+        android:minHeight="240dp"
+        android:layout_width="360dp"
+        android:layout_height="456dp">
+    <RelativeLayout
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rl_counselor_comment">
+    <ImageView
+            android:layout_marginTop="11dp"
+            android:id="@+id/img_selor"
+            android:src="@drawable/mask_img"
+            android:layout_marginLeft="68dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+                  android:textSize="15sp"
+                  android:lineSpacingExtra="13sp"
+                  android:textColor="#555555"
+        android:text="그림의 비율을 보면
+구름보다 나비가 큰 것을
+확인 할 수 있습니다.
+일상 생활중에서 아이의 초점이
+어디에 맟춰져 있나를
+확인할 수 있는 부분인데요,
+항상 일정하게 펼쳐지는 그림보다
+특별한 사물,특별한 경험이
+아이의 기억에 더 오래 남는다는 뜻이죠.
+가끔은 아이 손을 잡고 특별한 기억을 만드는 것도
+아이의 성장에 좋은 영향을 미칠 것 입니다.  "
+        android:layout_marginHorizontal="30dp"/>
+    <RelativeLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24sp"
+            android:layout_toRightOf="@+id/img_selor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="서울상담소"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_diary_frag_conselor_organization"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+        />
+        <TextView
+                android:layout_below="@id/txt_diary_frag_conselor_organization"
+                android:text="이성민 상담사"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_diary_frag_counselor_name"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+        />
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/txt_diary_frag_counselor_name"
+                   android:layout_below="@id/txt_diary_frag_conselor_organization"
+                   android:src="@drawable/pencil"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_first_dialog_ok"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/pink_border"
+                android:textColor="#FFFFFF"
+                android:text="확인"
+                android:paddingBottom="10dp"
+                android:paddingTop="6dp"
+        />
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>
