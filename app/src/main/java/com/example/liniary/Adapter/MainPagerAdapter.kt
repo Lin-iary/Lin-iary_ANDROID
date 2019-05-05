@@ -3,9 +3,13 @@ package com.example.liniary.Adapter
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
+import  com.example.liniary.Fragment.ConsultingFragment
+import com.example.liniary.Fragment.DiaryFragment
+import com.example.liniary.Fragment.DrawUpMainFragment
+import com.example.liniary.Fragment.MypageFragment
 
 class MainPagerAdapter (fm: FragmentManager, private val num_fragment:Int): FragmentStatePagerAdapter(fm) {
-    override fun getItem(p0: Int): Fragment {
+    override fun getItem(p0: Int): Fragment? {
         return when (p0) {
             0 -> DiaryFragment()
             1 -> DrawUpMainFragment()
@@ -15,6 +19,6 @@ class MainPagerAdapter (fm: FragmentManager, private val num_fragment:Int): Frag
         }
     }
     override fun getCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return num_fragment
     }
 }
