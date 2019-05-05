@@ -16,25 +16,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import java.util.*
-
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.liniary.Model.post.PostDiaryDrawUpResponse
 import com.example.liniary.Network.ApplicationController
 import com.example.liniary.Network.NetworkService
 import com.example.liniary.R
-
 import kotlinx.android.synthetic.main.fragment_drawup.*
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import org.jetbrains.anko.support.v4.toast
-import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.io.File
 import java.text.SimpleDateFormat
+import java.util.*
 
 
 class DrawUpMainFragment : Fragment() {
@@ -89,12 +86,12 @@ class DrawUpMainFragment : Fragment() {
                 networkService.postDiaryDrawUpResponse(content, data)
 
             postDiaryDrawUpResponse.enqueue(object : Callback<PostDiaryDrawUpResponse> {
-                override fun onFailure(call: Call<PostDiaryDrawUpResponse>, t: Throwable) {
+                override fun onFailure(call: retrofit2.Call<PostDiaryDrawUpResponse>, t: Throwable) {
                     Log.e("write fail", t.toString())
                 }
 
                 override fun onResponse(
-                    call: Call<PostDiaryDrawUpResponse>, response: Response<PostDiaryDrawUpResponse>
+                    call: retrofit2.Call<PostDiaryDrawUpResponse>, response: Response<PostDiaryDrawUpResponse>
                 ) {
                     if (response.isSuccessful) {
                         if(response.body()!!.status == 200) {
